@@ -1,11 +1,8 @@
 import * as pdfjsLib from 'pdfjs-dist';
 import { PDFDocument } from 'pdf-lib';
 import type { PageThumbnail, PdfVerificationResult, PdfPageMeta } from '../types';
+import './pdfjsWorker';
 
-// Set up PDF.js worker
-if (typeof window !== 'undefined') {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
-}
 
 /**
  * Client-Side PDF Verification & Security Inspector

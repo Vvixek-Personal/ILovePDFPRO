@@ -4,6 +4,7 @@ import JSZip from 'jszip';
 import type { WatermarkOptions, PageNumberOptions, SignAnnotation, EditAnnotation, MetadataOptions } from '../types';
 import * as pdfjsLib from 'pdfjs-dist';
 import { encryptPDF, AlreadyEncryptedError, PasswordEncodingError } from '@pdfsmaller/pdf-encrypt';
+import './pdfjsWorker';
 
 // Helper to convert File to ArrayBuffer
 export async function fileToArrayBuffer(file: File): Promise<ArrayBuffer> {
