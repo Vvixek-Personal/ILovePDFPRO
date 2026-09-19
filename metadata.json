@@ -1,0 +1,6 @@
+{
+  "name": "PDF Tools - Online Document Suite",
+  "description": "Fast, responsive mobile-friendly PDF tools suite with secure client-side PDF thumbnail preview verification, multi-file drag-and-drop, instant Google authentication, high-speed downloads, and accessible document processing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
